@@ -26,7 +26,7 @@ def _render(data):
 
     render_smg.SMG_PDF_PATH = os.path.join(HERE, "SMG_packet.pdf")
 
-    sigs_dir = os.path.join(HERE, "sigs")
+    sigs_dir = HERE
     if data.get("has_patient_sig") and not data.get("patient_signature_image"):
         data["patient_signature_image"] = os.path.join(sigs_dir, "patient_sig.png")
     if data.get("has_provider_sig") and not data.get("physician_signature_image"):
