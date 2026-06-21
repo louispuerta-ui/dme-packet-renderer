@@ -218,7 +218,7 @@ def _draw_p5(c, data):
     for k in ["administrative","instructional","monitoring"]:
         x, y = P5_SERVICES_XY[k]
         _check(c, x, y)
-    sig = data.get("patient_signature_image")
+    sig = data.get("physician_signature_image")
     x,y,w,h = P5_SIG["patient_signature"]
     _sig_image(c, sig, x, y, w, h)
 
